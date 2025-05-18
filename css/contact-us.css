@@ -1,0 +1,60 @@
+/* Contact Styles */
+
+.contact-section {
+  margin-bottom: 3rem;
+  padding: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top {
+  max-width: 245px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: var(--gold);
+  color: var(--black);
+  padding: .5rem .8rem;
+  border-radius: 15px;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--dark-gold);
+}
+
+
+
+/* To scale up the textarea for best optics */
+
+@media (min-width: 576px) {
+  
+  textarea {
+    height: 250px;
+    width: 500px;
+  }
+
+  .top {
+    max-width: 500px;
+  }
+  
+}
+
+@media (min-width: 992px) {
+
+  textarea {
+    width: 800px;
+  }
+
+  .top {
+    max-width: 800px;
+  }
+  
+}
+

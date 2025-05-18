@@ -1,0 +1,260 @@
+/* Color Palette */
+
+:root {
+  --gold: #DAA520;
+  --blue: #2055d9;
+  --black: #23221F;
+  --true-black: #000000;
+  --white: #ffffff;
+  --dark-gold: #B87F1B;
+  --warm-white: #F8EED5;
+  --gray: #AAA99F;
+  --light-gray: #F0F0F0;
+}
+
+
+
+/* Global Styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--black);
+  margin: 0;
+  padding: 0;
+  color: var(--warm-white);
+  font-family: Trebuchet MS, Times New Roman;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+h1 {
+  color: var(--white);
+  font-family: Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+
+
+/* Backgrounds & Logos */
+
+.logo-section {
+  background: url('../images/TLM-graduation.jpg') no-repeat;
+  background-color: var(--black);
+  text-align: center;
+}
+
+.logo {
+  margin: 2rem 0;
+}
+
+.logo-sm {
+  margin: 2rem 0;
+}
+
+.blue-background {
+  background: url('../images/keyboard-bg.jpeg') no-repeat center top;
+  background-color: var(--black);
+}
+
+.black-background {
+  background-color: var(--true-black);
+  padding: 3rem 0rem;
+  border-radius: 30px;
+}
+
+.transparent-screen {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+
+
+/* Nav Styles */
+
+.custom-nav {
+  background-color: var(--gold);
+  font-family: Monospace;
+  margin-bottom: 3rem;
+}
+
+.custom-nav button {
+  margin-right: 1rem;
+}
+
+.custom-links {
+  margin: auto;
+}
+
+.custom-links a {
+  font-size: 1.3rem;
+  text-shadow: 15px 10px 15px var(--true-black);
+  margin: 0rem 1rem;
+}
+
+.custom-links a:hover {
+  color: var(--white);
+}
+
+
+
+/* Footer Styles */
+
+footer {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 2rem 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.button-1 {
+  background-color: var(--gold);
+  color: var(--black);
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button-1:hover {
+  background-color: var(--dark-gold);
+  color: var(--black);
+}
+
+
+
+/* Homepage Content */
+
+.summary {
+  max-width: 900px;
+  padding: 3rem 0rem 12rem 0rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  line-height: 4.5rem;
+  text-align: right;
+}
+
+.summary span {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+#first {
+  font-style: italic;
+}
+
+#gold {
+  color: var(--gold);
+  font-weight: bold;
+}
+
+
+
+/* About Us */
+
+.about-us {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 3rem 1rem;
+}
+
+.mission-statement {
+  margin-bottom: 3rem;
+  border-radius: 30px;
+}
+
+.about-us-text {
+  max-height: 534px;
+  max-width: 700px;
+  overflow: auto;
+  margin: 0rem 1rem;
+}
+
+
+
+/* Course Offerings */
+
+.course-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 3rem 1rem;
+}
+
+.course-image {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border-top: 5px solid var(--gray);
+  border-left: 5px solid var(--gray);
+  border-radius: 30px;
+}
+
+.courses {
+  flex-basis: 100%;
+  margin: 0rem 1rem;
+}
+
+
+
+/* Media Styles */
+
+.media {
+  padding: 3rem 1rem;
+}
+
+.custom-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* To scale up sizes and looks for desktop */
+
+@media (min-width: 610px) {
+  
+  .logo-section {
+    text-align: left;
+  }
+  
+  .summary {
+    font-size: 2rem;
+  }
+  
+  .summary span {
+    font-size: 4rem;
+  }
+  
+  .courses {
+    flex-basis: 543px;
+  }
+  
+}
+
+@media (min-width: 1138px) {
+  
+  .about-us-text {
+    flex-basis: 30%;
+    align-self: center;
+  }
+  
+}
+
+
+
